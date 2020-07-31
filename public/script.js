@@ -8,7 +8,7 @@ const videoGrid = document.getElementById('video-grid')
 const myPeer =  new Peer({host:'peerjs-server.herokuapp.com', secure:true, port:443})
 
 const myVideo = document.createElement('video')
-myVideo.muted = true
+myVideo.muted = false
 const peers = {}
 navigator.mediaDevices.getUserMedia({
   video: true,
